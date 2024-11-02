@@ -26,7 +26,7 @@ export function Navbar() {
   return (
     <header>
       <div className="wrapper">
-       <div className='logo'><img src="./src/assets/logo.svg"/></div>
+       <div className='logo'><img src="https://s11.aconvert.com/convert/p3r68-cdx67/4a01i-ij4wo.svg"/></div>
         <div className='logo-links'>
           <a href="">Movie</a>
           <a href="">TV</a>
