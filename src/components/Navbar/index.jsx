@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./style.css";
 
+
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const mainNavRef = useRef(null); // Referenz für das Menü
@@ -26,7 +27,7 @@ export function Navbar() {
   return (
     <header>
       <div className="wrapper">
-       <div className='logo'><img src="https://s11.aconvert.com/convert/p3r68-cdx67/4a01i-ij4wo.svg"/></div>
+       <div className='logo'><img src="./src/assets/logo.svg"/></div>
         <div className='logo-links'>
           <a href="">Movie</a>
           <a href="">TV</a>
@@ -39,7 +40,7 @@ export function Navbar() {
             <li><a href="#"><i className="fa fa-info nav-icon"></i>About</a></li>
             <li><a href="#"><i className="fa fa-usd nav-icon"></i>Service</a></li>
             <li><a href="#"><i className="fa fa-pencil nav-icon"></i>Blog</a></li>
-            <li><a href="#"><i className="fa fa-envelope nav-icon"></i>Contact Us</a></li>
+            <li><a href="mailto:kasrazohourian@gmail.com"><i className="fa fa-envelope nav-icon"></i>Contact Us</a></li>
           </ul>
         </nav>
 

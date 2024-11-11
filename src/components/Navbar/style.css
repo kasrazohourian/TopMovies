@@ -3,7 +3,7 @@
 body {
   background: #f0f8ea;
   font-family: 'Quicksand', sans-serif;
-  
+  background-image: linear-gradient(to right, #870000, #190a05);
 }
 
 .wrapper {
@@ -27,6 +27,8 @@ header {
   position: sticky;
   top:0;
   z-index: 99999999;
+  width: 100%;
+  height: auto;
 }
 header::after {
   content: "";
@@ -60,6 +62,7 @@ header::after {
     height: 120px;
     border-radius: 30%;
     filter: drop-shadow(0px 0px 12px rgb(255, 9, 173));
+    
 }
 
 /* Hamburger Menu for Mobile */

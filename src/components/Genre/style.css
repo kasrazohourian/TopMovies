@@ -1,0 +1,17 @@
+.genre-container{
+    width: 400px;
+    display: b;
+    flex-direction: row;
+
+}
+.genre-list{
+  
+   padding: 30px;
+ 
+
+
+}
+.genre-list div{
+padding: 10px;
+color: white;
+}

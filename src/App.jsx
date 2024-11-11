@@ -1,6 +1,9 @@
 
 import { Navbar } from "./components/Navbar"
-import { Slider } from "./components/slider"
+import { Genre } from "./components/Genre"
+import { Popular } from "./components/Popular"
+
+
 
 
 function App() {
@@ -8,14 +11,11 @@ function App() {
 
   return (
     <>
-<Navbar/>
-<Slider/>
-
-
-
-
- 
+    <Navbar/>
+    <Popular/>
     
+
+     
     </>
   )
 }
