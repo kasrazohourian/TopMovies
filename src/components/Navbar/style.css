@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 body {
-  background: #f0f8ea;
+  background:rgb(242, 241, 230);
   font-family: 'Quicksand', sans-serif;
-  background-image: linear-gradient(to right, #870000, #190a05);
+  background-image: url("https://wallpapercave.com/wp/wp8000019.jpg");
+  background-repeat: no-repeat;
+  
 }
 
 .wrapper {
@@ -17,18 +19,20 @@ body {
 }
 
 
-header {
+.main-nav {
   display: flex;    
   justify-content: space-between;            /* Flexbox aktivieren */
-  align-items: center;           /* Elemente vertikal zentrieren */
+  align-items: s;           /* Elemente vertikal zentrieren */
   padding: 1em;
-  background-image: linear-gradient(to right, #870000, #190a05);
+ background-color: transparent;
   color: #ebebd3;
   position: sticky;
   top:0;
   z-index: 99999999;
   width: 100%;
   height: auto;
+ 
+  
 }
 header::after {
   content: "";
@@ -58,10 +62,11 @@ header::after {
 }
 .logo img {
   
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 30%;
-    filter: drop-shadow(0px 0px 12px rgb(255, 9, 173));
+    filter: drop-shadow(0px 0px 12px rgb(28, 26, 26));
+  
     
 }
 
@@ -109,10 +114,10 @@ header::after {
 /* Navigation Styling */
 .main-nav {
   position: absolute;
-  top: 100%;
+  top: 5%;
   right: 0;
   left: 0;
-  background: #464655;
+  background: transparent;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
@@ -146,7 +151,7 @@ header::after {
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background: #e4b363;
+  background: #000000;
   color: #464655;
 }
 
@@ -191,7 +196,7 @@ header::after {
   .main-nav a:hover,
   .main-nav a:focus {
     background: transparent;
-    color: #e4b363;
+    color: #000000;
   }
 
   .nav-icon {

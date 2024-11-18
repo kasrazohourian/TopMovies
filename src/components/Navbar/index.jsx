@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./style.css";
+import { Tv } from '../Tv';
 
 
 export function Navbar() {
@@ -28,15 +29,12 @@ export function Navbar() {
     <header>
       <div className="wrapper">
        <div className='logo'><img src="./src/assets/logo.svg"/></div>
-        <div className='logo-links'>
-          <a href="">Movie</a>
-          <a href="">TV</a>
-        </div>
+     
 
         {/* Navigationsmenü mit Ref */}
         <nav ref={mainNavRef} className="main-nav">
           <ul>
-            <li><a href="#"><i className="fa fa-home nav-icon"></i>Home</a></li>
+            <li><a href="#"><i className="fa fa-home nav-icon"></i>Home </a></li>
             <li><a href="#"><i className="fa fa-info nav-icon"></i>About</a></li>
             <li><a href="#"><i className="fa fa-usd nav-icon"></i>Service</a></li>
             <li><a href="#"><i className="fa fa-pencil nav-icon"></i>Blog</a></li>

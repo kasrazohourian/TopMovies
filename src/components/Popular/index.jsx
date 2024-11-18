@@ -1,4 +1,5 @@
 import "./style.css";
+import 'animate.css';
 import React, { useState, useEffect } from 'react';
 
 export function Popular() {
@@ -24,17 +25,26 @@ export function Popular() {
 
     return (
         <div className="popular-container">
+         <div className="title-of-movie">Popular Movies</div>
             <div className="papular-list">
                 {papular.map((movie) => (
                     <div key={movie.id} className="card">
                         <img src={`http://image.tmdb.org/t/p/w342/${movie.poster_path}`} alt={movie.title} />
-                        <div className="title">{movie.title} <br /> {movie.release_date?.slice(0, 4)}</div>
+                        <div className="title">{movie.title}</div>
+                        <div className="relase-date">{movie.release_date?.slice(0, 4)}</div>
                         <div className="overview">
                             <h2>{movie.overview}</h2>
+                            </div>
+                        
+                        <div className="vote_average">
+                            <div className="vote">{movie.vote_average} </div>
                         </div>
                     </div>
+                    
                 ))}
             </div>
+            
         </div>
+        
     );
 }

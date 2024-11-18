@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
-
-.popular-container{
+.tv-container{
     width: 100%;
     height:480px;
-    border-radius: 60px; 
+    border-radius: 30px;
     position: relative;
-    top: 250px;
+    top: 450px;
+    background-color:#051e3e ;
+    
     
 }
-.papular-list{
+.tv-list{
     position: relative;
     top: 30px;
     left:auto;
@@ -18,14 +19,13 @@
 
     
 }
-.papular-list  :hover img{
+.tv-list  :hover img{
     -webkit-filter: blur(1px);
     filter: blur(1px) drop-shadow(0px 0px 12px rgb(173, 219, 226));;
     
 }
 .card{
    padding-left: 24px;
-   padding: 20px;
 }
 
 .card img{
@@ -35,7 +35,7 @@
     border-radius: 15px;
     filter: drop-shadow(0px 0px 12px rgb(0, 0, 0));
 }
-.card .title{
+.card .name{
     display: flex;
     justify-content: space-evenly;
     text-align:center;
@@ -73,14 +73,14 @@
     font-family: "Faculty Glyphic", sans-serif;
     
 }
-.relase-date{
+.first_air_date{
     display: flex;
     justify-content: space-around;
     padding: 8px;
     font-family: "Faculty Glyphic", sans-serif;
     font-weight: 1000;
     font-size: 14px;
-    color: #fff4e6  ;
+    color: #fff4e6 ;
     
 
 }
@@ -106,8 +106,9 @@
     border-radius: 50%;
     border-style: outset;
     border-color:  #1fb93e
+    
 }
-.title-of-movie {
+.title-of-tv{
     padding: 10px;
     color:#fff4e6 ;
     display: flex;
@@ -116,5 +117,4 @@
     font-family: "Faculty Glyphic", sans-serif;
     font-weight: 1000;
     
-
 }

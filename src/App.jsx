@@ -1,23 +1,35 @@
 
 import { Navbar } from "./components/Navbar"
-import { Genre } from "./components/Genre"
 import { Popular } from "./components/Popular"
+import {Tv} from "./components/Tv"
 
 
 
 
-function App() {
-  
 
-  return (
-    <>
-    <Navbar/>
-    <Popular/>
-    
 
-     
-    </>
-  )
+
+export function App() {
+
+return(
+
+<>
+
+
+<Navbar/>
+<br />
+<Popular/>
+<br />
+<br />
+<br />
+<Tv/>
+
+
+
+
+</>
+
+);
 }
 
 export default App
