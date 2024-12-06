@@ -3,9 +3,19 @@
 body {
   background:rgb(242, 241, 230);
   font-family: 'Quicksand', sans-serif;
-  background-image: url("https://wallpapercave.com/wp/wp8000019.jpg");
+  background-image: url("https://images2.alphacoders.com/118/thumb-1920-1187424.jpg");
   background-repeat: no-repeat;
+  background-size:auto;
+  background-position:top;
   
+}
+
+/* Noch kleinere Bildschirme (z. B. Smartphones) */
+@media (max-width: 780px) {
+  body {
+  background-image:none;
+  background-color:#464655;
+  }
 }
 
 .wrapper {
@@ -16,24 +26,28 @@ body {
   width: 95%;
   height: auto;
   max-width: 100%;
+  
 }
 
 
 .main-nav {
-  display: flex;    
-  justify-content: space-between;            /* Flexbox aktivieren */
-  align-items: s;           /* Elemente vertikal zentrieren */
-  padding: 1em;
- background-color: transparent;
+  justify-content: space-evenly;            /* Flexbox aktivieren */
+  align-items: center;           /* Elemente vertikal zentrieren */
+  background-color: transparent;
   color: #ebebd3;
   position: sticky;
   top:0;
   z-index: 99999999;
   width: 100%;
   height: auto;
- 
-  
 }
+.main-nav .nav-text img{
+  width: 32px;
+  height: 32px;
+
+}
+
+
 header::after {
   content: "";
   clear: both;
@@ -65,10 +79,11 @@ header::after {
     width: 80px;
     height: 80px;
     border-radius: 30%;
-    filter: drop-shadow(0px 0px 12px rgb(28, 26, 26));
-  
-    
+    filter: drop-shadow(0px 0px 12px rgba(213, 10, 10, 0.91));
+
 }
+
+
 
 /* Hamburger Menu for Mobile */
 .menu-toggle {
@@ -77,6 +92,7 @@ header::after {
   top: 0.5em;
   right: 0.2em;
   cursor: pointer;
+  z-index: 10000;
 }
 
 .hamburger,
@@ -118,13 +134,15 @@ header::after {
   right: 0;
   left: 0;
   background: transparent;
-  max-height: 0;
+  max-height:  0;
   overflow: hidden;
-  transition: max-height 0.5s ease;
+  transition: max-height 1s ease;
+  z-index: 999999;
 }
 
 .main-nav-open {
   max-height: 300px; /* or auto if known height is unavailable */
+
 }
 
 .main-nav ul {
@@ -142,16 +160,17 @@ header::after {
 }
 
 .main-nav a {
-  color: white;
+  color:rgb(6, 5, 5);
   display: block;
-  padding: 1em;
+  padding: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
+ 
 }
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background: #000000;
+  background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
   color: #464655;
 }
 
@@ -163,6 +182,7 @@ header::after {
   text-align: center;
   width: 1.1em;
   color: rgba(255, 255, 255, 0.45);
+  
 }
 
 /* Desktop Styling */
@@ -172,26 +192,76 @@ header::after {
   }
 
   .main-nav {
+    display: flex;
+    justify-content: start;
     position: relative;
     background: transparent;
     float: right;
     max-height: none;
     height: auto;
     transition: none;
+    
   }
 
   .main-nav ul {
     display: flex;
+    align-items: center;
   }
 
   .main-nav li {
     border: none;
+    
   }
 
   .main-nav a {
-    padding: 0;
+    padding: 5px;
     margin-left: 2em;
+    font-weight: 900;
+  
   }
+
+.searchbar{
+  display: inline;
+position: relative;
+left: 100px;
+top: 19px;
+
+}
+  .searchbar input {
+
+    padding: 25px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid green;
+    background-color: transparent;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/9479/9479251.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: 545px;
+    font-size: 16px;
+  
+  }
+  .nav-text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    left: 640px;
+    bottom: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: beige;
+  }
+  .nav-text img{
+    width: 30px;
+    height: 30px;
+    
+    
+  
+  }
+  
+  
 
   .main-nav a:hover,
   .main-nav a:focus {
@@ -203,3 +273,4 @@ header::after {
     display: none; /* Hide nav icon on desktop */
   }
 }
+

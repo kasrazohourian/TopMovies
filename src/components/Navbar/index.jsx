@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./style.css";
-import { Tv } from '../Tv';
+
+
+
+
+
+
 
 
 export function Navbar() {
@@ -21,6 +26,7 @@ export function Navbar() {
         mainNav.classList.add('main-nav-open');
       } else {
         mainNav.classList.remove('main-nav-open');
+       
       }
     }
   }, [isMenuOpen]);
@@ -28,28 +34,41 @@ export function Navbar() {
   return (
     <header>
       <div className="wrapper">
-       <div className='logo'><img src="./src/assets/logo.svg"/></div>
+       <div className='logo'> <img src="./src/assets/logo.svg"/></div>
+
      
 
         {/* Navigationsmenü mit Ref */}
-        <nav ref={mainNavRef} className="main-nav">
+        <nav ref={mainNavRef} className="main-nav"> 
+          
           <ul>
             <li><a href="#"><i className="fa fa-home nav-icon"></i>Home </a></li>
             <li><a href="#"><i className="fa fa-info nav-icon"></i>About</a></li>
-            <li><a href="#"><i className="fa fa-usd nav-icon"></i>Service</a></li>
-            <li><a href="#"><i className="fa fa-pencil nav-icon"></i>Blog</a></li>
             <li><a href="mailto:kasrazohourian@gmail.com"><i className="fa fa-envelope nav-icon"></i>Contact Us</a></li>
+            <li className='searchbar'> <input type="search" placeholder='Suche nach Film, Serie, Person... ' size={70}/> <div className='nav-text'>Willkommen.
+            Entdecke Millionen von Filmen, Serien und Personen. <img src="https://cdn-icons-png.flaticon.com/128/846/846799.png" alt="" /> </div></li>
+          
           </ul>
-        </nav>
 
+        </nav>
+  
+        
         {/* Menü-Toggle-Button mit Ref und Event */}
         <div
           ref={menuToggleRef}
           className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
           onClick={handleToggleClick}
+          
         >
-          <div className="hamburger"></div>
+          <div className="hamburger">
+      
+         </div>
+    
+
         </div>
+    
+
+
       </div>
     </header>
   );

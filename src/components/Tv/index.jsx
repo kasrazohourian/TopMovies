@@ -9,7 +9,7 @@ export function Tv() {
 
     useEffect(() => {
         async function fetchPopularTv() {
-            const response = await fetch("https://api.themoviedb.org/3/discover/tv?include_adult=false&include_null_first_air_dates=false&language=en-US&page=1&sort_by=popularity.desc", {
+            const response = await fetch("https://api.themoviedb.org/3/trending/tv/day?language=en-US", {
                 headers: {
                     accept: "application/json",
                     Authorization: API_KEY,
@@ -24,8 +24,11 @@ export function Tv() {
     }, []);
 
     return (
+        
+
         <div className="tv-container">
-             <div className="title-of-tv"> Tv</div>
+            
+             <div className="title-of-tv"> Trending Tv</div>
             <div className="tv-list">
                 {papulartv.map((tv) => (
                     <div key={tv.id} className="card">

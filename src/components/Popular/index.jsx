@@ -25,7 +25,7 @@ export function Popular() {
 
     return (
         <div className="popular-container">
-         <div className="title-of-movie">Popular Movies</div>
+         <div className="title-of-movie">Popular </div>
             <div className="papular-list">
                 {papular.map((movie) => (
                     <div key={movie.id} className="card">

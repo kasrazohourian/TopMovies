@@ -5,7 +5,7 @@
     height:480px;
     border-radius: 60px; 
     position: relative;
-    top: 250px;
+    top: 370px;
     
 }
 .papular-list{
@@ -14,9 +14,7 @@
     left:auto;
     display: flex;
     justify-content: space-around;
-    overflow-x: scroll;
-
-    
+    overflow-x:scroll;
 }
 .papular-list  :hover img{
     -webkit-filter: blur(1px);
@@ -108,13 +106,13 @@
     border-color:  #1fb93e
 }
 .title-of-movie {
-    padding: 10px;
+    padding: 20px;
     color:#fff4e6 ;
     display: flex;
     justify-content: start;
-    font-size: 24px;
+    font-size: 34px;
     font-family: "Faculty Glyphic", sans-serif;
     font-weight: 1000;
+    filter: drop-shadow(0px 0px 12px rgba(255, 119, 0, 0.91));
     
-
 }

@@ -2,7 +2,8 @@
 import { Navbar } from "./components/Navbar"
 import { Popular } from "./components/Popular"
 import {Tv} from "./components/Tv"
-
+import { Trend } from "./components/trending";
+import { Genre } from "./components/Genre";
 
 
 
@@ -22,10 +23,15 @@ return(
 <br />
 <br />
 <br />
+<br />
 <Tv/>
+<br />
+<br />
+<br />
 
+<Trend/>
 
-
+<Genre/>
 
 </>
 

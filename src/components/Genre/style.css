@@ -1,17 +1,95 @@
-.genre-container{
-    width: 400px;
-    display: b;
-    flex-direction: row;
-
+/* Genre Container */
+.genre-container {
+    position: relative;
+    top: 550px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  background-color: #2c3e50;
+  border-radius: 50px;
 }
-.genre-list{
-  
-   padding: 30px;
- 
 
-
+.genre-container h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
 }
-.genre-list div{
-padding: 10px;
-color: white;
+
+/* Flex Container for Movies and TVs */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* List Styles */
+.list {
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+}
+
+.list h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #34495e;
+    border-bottom: 2px solid #dcdcdc;
+    padding-bottom: 5px;
+}
+
+/* Genre Item Styles */
+.genre-item {
+    font-size: 1rem;
+    color: #34495e;
+    padding: 8px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.genre-item:hover {
+    background-color: #eaf2f8;
+}
+.foto img{
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 350px;
+     bottom: 20px;
+}
+.data{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #eaf2f8;
+    border-radius: 50px;
+}
+.data img{
+    
+    width: 100px;
+    
+}
+.developer{
+    display: flex;
+    justify-content: center;
+    color: rgb(238, 218, 218);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+.developer img{
+    padding: 15px;
+    width: 34px;
+    height: 34px;
 }
