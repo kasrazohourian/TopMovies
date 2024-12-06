@@ -42,7 +42,7 @@ export function Navbar() {
         <nav ref={mainNavRef} className="main-nav"> 
           
           <ul>
-            <li><a href="#"><i className="fa fa-home nav-icon"></i>Home </a></li>
+            <li><a href="https://topmoviez.netlify.app"><i className="fa fa-home nav-icon"></i>Home </a></li>
             <li><a href="#"><i className="fa fa-info nav-icon"></i>About</a></li>
             <li><a href="mailto:kasrazohourian@gmail.com"><i className="fa fa-envelope nav-icon"></i>Contact Us</a></li>
             <li className='searchbar'> <input type="search" placeholder='Suche nach Film, Serie, Person... ' size={70}/> <div className='nav-text'>Willkommen.
