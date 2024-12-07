@@ -34,7 +34,7 @@ export function Navbar() {
   return (
     <header>
       <div className="wrapper">
-       <div className='logo'> <a href="https://topmoviez.netlify.app "><img src="./src/assets/logo.svg"/> </a> </div>
+       <div className='logo'> <a href="https://topmoviez.netlify.app "><img src="https://i.ibb.co/4p0LPpy/Download.png"/> </a> </div>
 
      
 
