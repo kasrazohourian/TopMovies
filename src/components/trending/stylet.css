@@ -21,9 +21,9 @@
 
     
 }
-.tv-list  :hover img{
+.trend-list  :hover img{
     -webkit-filter: blur(1px);
-    filter: blur(1px) drop-shadow(0px 0px 12px rgb(173, 219, 226));;
+    filter: blur(1px) drop-shadow(0px 0px 12px rgb(173, 219, 226));
     
 }
 .card{
@@ -110,7 +110,7 @@
     border-color:  #1fb93e
     
 }
-.title-of-tv{
+.title-of-trend{
     padding: 10px;
     color:#fff4e6 ;
     display: flex;

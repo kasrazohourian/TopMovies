@@ -18,7 +18,7 @@
 }
 .papular-list  :hover img{
     -webkit-filter: blur(1px);
-    filter: blur(1px) drop-shadow(0px 0px 12px rgb(173, 219, 226));;
+    filter: blur(1px) drop-shadow(0px 0px 12px rgb(173, 219, 226));
     
 }
 .card{

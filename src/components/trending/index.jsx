@@ -33,7 +33,7 @@ export function Trend() {
 
     return (
         <div className="trend-container">
-            <div className="title-of-tv">Trending Movies</div>
+            <div className="title-of-trend">Trending Movies</div>
             <div className="trend-list">
                 {TrendList.map((trend) => (
                     <div key={trend.id} className="card">
